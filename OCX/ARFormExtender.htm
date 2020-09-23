@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description"
+content="Free ActiveX components (controls and libraries) made in Visual Basic 5, that can be used in other projects and programs.">
+<meta name="keywords"
+content="ActiveX, components, Visual Basic 5, ocx, control, library, libraries, program, programming, development, free, gradient, form, project, component, dll, application, develope, development, background">
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>AR Form Extender Control</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<div align="center"><center>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="100%" bgcolor="#FFD940"><font color="#0000FF" size="4" face="Verdana"><strong>AR
+    Form Extender Control 1.04</strong></font></td>
+  </tr>
+</table>
+</center></div>
+
+<p><font color="#000000" size="2" face="Verdana">This control will allow you to use a
+picture as the background of your control, centered or tiled, or a gradient. You will also
+be able to make the form flash, remember its last position and state, stay on top, clip
+the mouse over it or set the minimum or maximum height or width that the form will be able
+to have. The control has also a special resize event that you can use to resize other
+controls included in the form.</font></p>
+
+<p><font color="#000000" size="2" face="Verdana">This control replaces and improves the <a
+href="http://sevillaonline.com/ActiveX/AROnTopCtrl.htm">AR OnTop</a>, <a
+href="http://sevillaonline.com/ActiveX/ARFlashCtrl.htm">AR Flash</a> and <a
+href="http://sevillaonline.com/ActiveX/ARBackgrCtrl.htm">AR Background controls</a>.</font></p>
+
+<p><u><font color="#000000" size="2" face="Verdana">History:</font></u> 
+
+<ul>
+  <li><font color="#000000" size="2" face="Verdana">26.06.98, Version 1.0 released.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">Version 1.02 10.07.98: added the
+    MouseClipped property.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">Version 1.04 27.07.98: added the ability
+    of remembering last form position and state.</font></li>
+</ul>
+
+<p><font color="#000000" size="2" face="Verdana"><u>Properties:</u></font> 
+
+<ul>
+  <li><font color="#000000" size="2" face="Verdana">AppName. Type here the name of your
+    application. This property will be used to store in the registry the information about the
+    last position and state of the form, and is only necessary if you set to True the
+    RecordWindowPos property. The information will be saved under
+    HKCU/Software/AppName/FormName.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">BackgroundType: 0 (None), 1 (Gradient), 2
+    (Picture Centered) or 3 (Picture Tiled).</font></li>
+  <li><font color="#000000" size="2" face="Verdana">Flash. True or False, set it to True if
+    you want the form to flash.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">FlashRate. How many times per second you
+    want the form to flash.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">GradientEndColor. If BackgroundType is 1,
+    this color will be used as the ending color for the gradient shown in the background of
+    your form.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">GradientIniColor. If BackgroundType is 1,
+    this color will be used as the initial color for the gradient shown in the background of
+    your form.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">GradientOrientation: 0 (Up Down), 1 (Left
+    Right), 2 (Down Up) or 3 (Right Left). If BackgroundType is 1, use this property to set
+    the orientation that you want the gradient in the background to have.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">MaxHeight. Maximum height that you want
+    the form to have, given in twips. Set it to 0 if you want this property to be ignored.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">MaxWidth. Maximum width that you want the
+    form to have, given in twips. Set it to 0 if you want this property to be ignored.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">MinHeight. Minimum height that you want
+    the form to have, given in twips. Set it to 0 if you want this property to be ignored.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">MinWidth. Minimum width that you want the
+    form to have, given in twips. Set it to 0 if you want this property to be ignored.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">MoouseClipped. When set to True, the
+    cursor movement will be restricted to the area of the form. Additionally, the user will
+    not be able to resize or move the form in any case. For security, this property can only
+    be set at run-time.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">OnTop. True or False, set it to True if
+    you want the form to stay on top of all the other forms.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">Picture. This will be the pictured used in
+    the background if BackgroundType is set to 2 or 3.</font></li>
+  <li><font color="#000000" size="2" face="Verdana">RecordWindowPos. Set this property to True
+    if you want the form to remember the last position and state of the form in which it is
+    placed. You will also have to set the AppName property.</font></li>
+</ul>
+
+<p><font color="#000000" size="2" face="Verdana"><u>Methods:</u></font> 
+
+<ul>
+  <li><font color="#000000" size="2" face="Verdana">Refresh. This refreshes the background of
+    the form. You will have to use it if you change background options at run-time.</font></li>
+</ul>
+
+<p><font color="#000000" size="2" face="Verdana"><u>Events:</u></font> 
+
+<ul>
+  <li><small><font face="Verdana">Resize (WidthChange As Single, HeightChange As Single). You
+    can use this event to resize other controls contained in the form. The special features of
+    this event are that it will provide you the vertical and horizontal changes (given in
+    twips) since the last time this event was fired, and that it will not be fired when the
+    form is minimized.</font></small></li>
+</ul>
+
+<p><font color="#000000" size="2" face="Verdana"><strong>VERY IMPORTANT:</strong> If you
+are going to use the background options of this control, set the <strong>AutoRedraw</strong>
+property of the form in which you place this control to 'True'.</font></p>
+
+<p>&nbsp;</p>
+
+<p align="center"><font size="1" face="Verdana">© <a
+href="mailto:merlin@sevillaonline.com">Alvaro Redondo</a>, 1998. All Rights Reserved.<br>
+<a href="http://www.sevillaonline.com/ActiveX">http://www.sevillaonline.com/ActiveX</a></font></p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[Version]
+Version=1.20.0.0
+
+[vbskfree.ocx <0009>]
+Dest=$(WinSysPath)
+Date=21/08/02
+Time=16:33
+Version=1.20.0.0
+CABFilename=
+Uses1=Msvbvm60.dll
+Uses2=OLEAUT32.DLL
+Uses3=OLEPRO32.DLL
+Uses4=Asycfilt.dll
+Uses5=STDOLE2.TLB
+Uses6=COMCAT.DLL
+Uses7=vbskfree.chm

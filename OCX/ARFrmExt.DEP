@@ -1,0 +1,148 @@
+[Version]
+Version=1.4.0.0
+
+[VB5ES.DLL <000A>]
+Register=
+Dest=$(WinSysPath)
+Date=7/28/1997
+Time=13:45:26
+Version=5.0.43.19
+CABFilename=VB5ES.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb5
+CABINFFile=VB5ES.inf
+CABRunFile=
+Uses1=
+
+[MSVBVM50.DLL <000A>]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPathSysFile)
+Date=7/19/1997
+Time=16:55:40
+Version=5.1.43.19
+CABFilename=MSVBVM50.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb5
+CABINFFile=MSVBVM50.inf
+CABRunFile=
+Uses1=
+
+[STDOLE2.TLB <000A>]
+Register=$(TLBRegister)
+Dest=$(WinSysPathSysFile)
+Date=5/19/1997
+Time=8:08:12
+Version=2.20.4118.1
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=OleAut32.dll
+Uses2=OlePro32.dll
+Uses3=AsycFilt.dll
+Uses4=
+
+[OLEAUT32.DLL <000A>]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPathSysFile)
+Date=5/19/1997
+Time=8:08:12
+Version=2.20.4118.1
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+[OLEPRO32.DLL <000A>]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPathSysFile)
+Date=5/19/1997
+Time=8:08:12
+Version=5.0.4118.1
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+[ASYCFILT.DLL <000A>]
+Register=
+Dest=$(WinSysPathSysFile)
+Date=5/19/1997
+Time=8:08:10
+Version=2.20.4118.1
+CABFilename=AsycFilt.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb5
+CABINFFile=AsycFilt.inf
+CABRunFile=
+Uses1=
+
+[CTL3D32.DLL <000A>]
+Register=
+Dest=$(WinSysPathSysFile)
+Date=2/20/1997
+Time=0:00:00
+Version=2.31.0.0
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+[COMCAT.DLL <000A>]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPathSysFile)
+Date=2/20/1997
+Time=0:00:00
+Version=4.71.1441.1
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+[ARFRMEXT.OCX <000A>]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPath)
+Date=7/27/1998
+Time=2:39:57
+Version=1.4.0.0
+CABFilename= ; Si va a comprimir este archivo en un archivo Cabinet (.cab), debe agregar el nombre de este archivo aquí.
+CABDefaultURL= ; Si especificó un CABFileName, pude indicar aquí la ubicación URL; dónde los usuarios de Internet pueden encontrar su archivo Cabinet para transferir.
+CABINFFile= ; Si especificó un CABFileName que procesa un archivo INF, debe poner aquí el nombre del archivo inf contenido en este archivo Cabinet. Esto se pasa por alto si está presente la clave Run= clave
+CABRunFile= ; Si especificó un CABFileName que procesa un archivo EXE, debe indicar aquí el nombre del archivo exe contenido en este archivo Cabinet. Esto tiene prioridad sobre la clave InfFile= clave
+Uses1=VB5ES.dll
+Uses2=MSVBVM50.dll
+Uses3=StdOle2.tlb
+Uses4=OleAut32.dll
+Uses5=OlePro32.dll
+Uses6=AsycFilt.dll
+Uses7=Ctl3d32.dll
+Uses8=ComCat.dll
+Uses9=MsStkPrp.dll
+Uses10=MsPrpES.dll
+Uses11=
+
+[MSSTKPRP.DLL <000A>]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPath)
+Date=7/19/1997
+Time=10:26:10
+Version=5.1.43.19
+CABFilename=MsStkPrp.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb5
+CABINFFile=MsStkPrp.inf
+CABRunFile=
+Uses1=MsPrpES.dll
+Uses2=
+
+[MSPRPES.DLL <000A>]
+Register=
+Dest=$(WinSysPath)
+Date=7/28/1997
+Time=13:36:54
+Version=5.1.43.19
+CABFilename=MsPrpES.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb5
+CABINFFile=MsPrpES.inf
+CABRunFile=
+Uses1=
